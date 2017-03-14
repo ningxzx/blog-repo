@@ -1,4 +1,4 @@
-# Think different
+### Think different
 
 Record myself and the world.
 

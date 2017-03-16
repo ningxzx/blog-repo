@@ -9,10 +9,10 @@ deploy:
   provider: FTP 
   protocol: ftp
   host: 60.205.191.214 
-  username: webftp
+  username: root
   #密码用这个加密 https://ci.appveyor.com/tools/encrypt
   password: 
-    secure: PSTgzcogMszFKm0drUJ6eA==
+    secure: 5rgjw5sOGUj/eUczSSGmrw==
   folder: /var/forldn/blog
   draft: false
   active_mode: false 

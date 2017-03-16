@@ -31,13 +31,13 @@ on_success:
 
   deploy:
 
-  provider: FTP 
-  protocol: sftp 
-  host: 60.205.191.214 
-  username: root
-  #密码用这个加密 https://ci.appveyor.com/tools/encrypt
-  password: 
-    secure: yEY1gj7tDDldcendeCe3SU6h697tct4gge3PCr7apHk=
-  folder: pfs/project/rabbitim-third-library/release
-  draft: false
-  active_mode: false 
+    provider: FTP 
+    protocol: sftp 
+    host: 60.205.191.214 
+    username: root
+    #密码用这个加密 https://ci.appveyor.com/tools/encrypt
+    password: 
+      secure: yEY1gj7tDDldcendeCe3SU6h697tct4gge3PCr7apHk=
+    folder: pfs/project/rabbitim-third-library/release
+    draft: false
+    active_mode: false 

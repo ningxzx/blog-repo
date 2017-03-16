@@ -3,7 +3,7 @@ clone_folder: c:\projects\ningxzx.github.io
 configuration: Release
 
 artifacts:
-  - path: **\*.*
+  - path: '**\*.*'
 
 deploy:
   provider: FTP 

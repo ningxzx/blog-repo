@@ -2,7 +2,7 @@ build_script:
   - git status
 
 artifacts:
-  - path: '*.md'
+  - path: '**\*.*'
 
 
 deploy:

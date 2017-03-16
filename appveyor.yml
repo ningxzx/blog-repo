@@ -39,4 +39,4 @@ deploy:
     secure: PSTgzcogMszFKm0drUJ6eA==
   folder: /var/forldn/blog/
   draft: false
-  active_mode: false 
+  active_mode: true 

@@ -1,9 +1,9 @@
-
-clone_folder: c:\projects\ningxzx.github.io
-configuration: Release
+build_script:
+  - git status
 
 artifacts:
-  - path: '**\*.*'
+  - path: public
+
 
 deploy:
   provider: FTP 

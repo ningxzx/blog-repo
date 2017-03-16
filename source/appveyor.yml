@@ -3,8 +3,6 @@ build_script:
 
 artifacts:
   - path: '*.md'
-    type: file
-    name: app
 
 
 deploy:

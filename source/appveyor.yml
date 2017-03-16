@@ -1,4 +1,8 @@
-build: off
+
+
+artifacts:
+  - path: ／
+
 deploy:
   provider: FTP 
   protocol: ftp

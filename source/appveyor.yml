@@ -12,8 +12,8 @@ deploy:
   protocol: ftps
   host: 60.205.191.214 
   username: webftp
+  Artifact: app
   #密码用这个加密 https://ci.appveyor.com/tools/encrypt
   password: 
     secure: PSTgzcogMszFKm0drUJ6eA==
-  folder: /var/forldn/blog
   active_mode: false 

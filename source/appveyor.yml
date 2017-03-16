@@ -11,6 +11,5 @@ deploy:
   host: 60.205.191.214 
   username: root
   #密码用这个加密 https://ci.appveyor.com/tools/encrypt
-  password: 
-    secure: yEY1gj7tDDldcendeCe3SU6h697tct4gge3PCr7apHk=
+  password: xzxloveldn910208
   active_mode: false 

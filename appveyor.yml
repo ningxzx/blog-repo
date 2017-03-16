@@ -28,3 +28,16 @@ on_success:
   - SETLOCAL EnableDelayedExpansion & robocopy "%APPVEYOR_BUILD_FOLDER%\public" "%TEMP%\static-site" /e & IF !ERRORLEVEL! EQU 1 (exit 0) ELSE (IF !ERRORLEVEL! EQU 3 (exit 0) ELSE (exit 1))
   - git add -A
   - if "%APPVEYOR_REPO_BRANCH%"=="master" if not defined APPVEYOR_PULL_REQUEST_NUMBER (git diff --quiet --exit-code --cached || git commit -m "Update Static Site" && git push origin %TARGET_BRANCH% && appveyor AddMessage "Static Site Updated")
+
+  deploy:
+
+  provider: FTP 
+  protocol: sftp 
+  host: 60.205.191.214 
+  username: root
+  #密码用这个加密 https://ci.appveyor.com/tools/encrypt
+  password: 
+    secure: yEY1gj7tDDldcendeCe3SU6h697tct4gge3PCr7apHk=
+  folder: pfs/project/rabbitim-third-library/release
+  draft: false
+  active_mode: false 

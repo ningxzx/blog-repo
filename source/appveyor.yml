@@ -9,7 +9,7 @@ artifacts:
 
 deploy:
   provider: FTP 
-  protocol: ftps
+  protocol: ftp
   host: 60.205.191.214 
   username: webftp
   Artifact: app

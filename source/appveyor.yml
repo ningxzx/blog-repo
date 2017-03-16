@@ -2,8 +2,9 @@ build_script:
   - git status
 
 artifacts:
-  - path: '**\*.*'
+  - path: '*.md'
     type: file
+    name: app
 
 
 deploy:

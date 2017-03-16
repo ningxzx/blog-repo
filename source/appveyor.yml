@@ -7,12 +7,12 @@ artifacts:
 
 deploy:
   provider: FTP 
-  protocol: sftp
+  protocol: ftp
   host: 60.205.191.214 
-  username: root
+  username: webftp
   #密码用这个加密 https://ci.appveyor.com/tools/encrypt
   password: 
-    secure: 5rgjw5sOGUj/eUczSSGmrw==
+    secure: PSTgzcogMszFKm0drUJ6eA==
   folder: /var/forldn/blog
   draft: false
   active_mode: false 

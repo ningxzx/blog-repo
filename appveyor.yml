@@ -37,6 +37,6 @@ deploy:
   #密码用这个加密 https://ci.appveyor.com/tools/encrypt
   password: 
     secure: PSTgzcogMszFKm0drUJ6eA==
-  folder: /var/forldn/blog
+  folder: /
   draft: false
   active_mode: false 

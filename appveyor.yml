@@ -38,6 +38,6 @@ on_success:
     #密码用这个加密 https://ci.appveyor.com/tools/encrypt
     password: 
       secure: yEY1gj7tDDldcendeCe3SU6h697tct4gge3PCr7apHk=
-    folder: pfs/project/rabbitim-third-library/release
+    folder: /var/forldn/blog/
     draft: false
     active_mode: false 

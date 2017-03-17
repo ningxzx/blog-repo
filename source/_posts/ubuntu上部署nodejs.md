@@ -1,5 +1,5 @@
 ---
-title: 阿里云服务器部署最新nodejs
+title: ubuntu上部署nodejs
 date: 2017-03-17 15:37:08
 tags:
 	- ubuntu
@@ -8,7 +8,8 @@ tags:
 category: 编程
 ---
 
-今天尝试了很多种在ubuntu上安装nodejs的方法
+##需求
+在[上文]（）
 nvm，每次都要重新source编译
 apt-get install nodejs,版本过低
 

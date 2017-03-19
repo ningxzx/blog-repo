@@ -1,10 +1,12 @@
 build_script:
   - git status
 
+after_build:
+  - 7z a myapp.zip %APPVEYOR_BUILD_FOLDER%
+
 artifacts:
-  - path: '**\*.zip'
-
-
+  - path: 'myapp.zip'
+  
 deploy:
   provider: FTP 
   protocol: ftp

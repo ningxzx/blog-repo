@@ -2,11 +2,13 @@ build_script:
   - git status
 
 after_build:
-  - 7z a myapp.zip %APPVEYOR_BUILD_FOLDER%
+  - 7z a blog.zip %APPVEYOR_BUILD_FOLDER%
 
 artifacts:
-  - path: 'myapp.zip'
-  
+  - path: 'blog.zip'
+
+before_deploy:
+  - 7z x blog.zp -r
 deploy:
   provider: FTP 
   protocol: ftp
@@ -17,4 +19,4 @@ deploy:
     secure: PSTgzcogMszFKm0drUJ6eA==
   active_mode: false 
   beta: true
-  folder: '//var/forldn/blog'
+  folder: '//var/forldn/'

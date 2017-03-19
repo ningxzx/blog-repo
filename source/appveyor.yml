@@ -5,7 +5,7 @@ after_build:
   - 7z a blog.zip %APPVEYOR_BUILD_FOLDER%
 
 artifacts:
-  - path: '**\*.*'
+  - path: 'blog.zip'
 
 before_deploy:
   # - 7z x blog.zip -r

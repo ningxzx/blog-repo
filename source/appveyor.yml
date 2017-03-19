@@ -8,7 +8,7 @@ artifacts:
   - path: 'blog.zip'
 
 before_deploy:
-  - 7z x blog.zp -r
+  - 7z x blog.zip -r
   - echo 'unzip success'
 deploy:
   provider: FTP 

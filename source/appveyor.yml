@@ -7,7 +7,7 @@ artifacts:
 
 deploy:
   provider: FTP 
-  protocol: ftps
+  protocol: ftp
   host: 60.205.191.214 
   username: webftp
   #密码用这个加密 https://ci.appveyor.com/tools/encrypt

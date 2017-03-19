@@ -21,14 +21,14 @@ category: 编程
 nodejs -v，版本号依旧显示为0.10.25。并且bash也没有执行。
 但是更主要的原因是，我不清楚ubuntu中有一个还是两个nodejs版本，这让强迫症的我很难受，想找一个清爽的解决办法。
 
-使用nvm安装，很方便，但是没有把node加到bash命令，每次都要重新source编译
+- 使用nvm安装，很方便，但是没有把node加到bash命令，每次都要重新source编译
 
 ## 成功做法
-- 首先安装npm,nodejs
+1. 首先安装npm,nodejs
 
-- 随后安装n，通过这个包安装node.js(latest/stable)
+2. 随后安装n，通过这个包安装node.js(latest/stable)
 
-- 最后升级npm版本
+3. 最后升级npm版本
 	<pre>
 	apt-get install nodejs
 	apt-get install npm

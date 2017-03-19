@@ -17,7 +17,6 @@ category: 编程
 	<pre>
 	curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -  
 	sudo apt-get install -y nodejs
-	
 	</pre>
 nodejs -v，版本号依旧显示为0.10.25。并且bash也没有执行。
 但是更主要的原因是，我不清楚ubuntu中有一个还是两个nodejs版本，这让强迫症的我很难受，想找一个清爽的解决办法。
@@ -31,7 +30,6 @@ nodejs -v，版本号依旧显示为0.10.25。并且bash也没有执行。
 
 - 最后升级npm版本
 	<pre>
-
 	apt-get install nodejs
 	apt-get install npm
 	npm install -g cnpm --registry=https://registry.npm.taobao.org

@@ -9,7 +9,7 @@ artifacts:
 
 before_deploy:
   # - 7z x blog.zip -r
-  - echo 'deploy start'
+  - echo 'deploy will start'
 deploy:
   provider: FTP 
   protocol: ftp

@@ -13,7 +13,6 @@ deploy:
   #密码用这个加密 https://ci.appveyor.com/tools/encrypt
   password: 
     secure: PSTgzcogMszFKm0drUJ6eA==
-  application: 'blog'
   active_mode: false 
   beta: true
   folder: '//var/forldn/blog'

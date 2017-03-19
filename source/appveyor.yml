@@ -2,7 +2,7 @@ build_script:
   - git status
 
 after_build:
-  # - 7z a blog.zip %APPVEYOR_BUILD_FOLDER%
+  - 7z a blog.zip %APPVEYOR_BUILD_FOLDER%
 
 artifacts:
   - path: '**\*.*'
@@ -20,4 +20,4 @@ deploy:
     secure: PSTgzcogMszFKm0drUJ6eA==
   active_mode: false 
   beta: true
-  folder: '//var/forldn/blog'
+  folder: '//var/forldn/blog/'

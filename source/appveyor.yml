@@ -2,13 +2,13 @@ build_script:
   - git status
 
 after_build:
-  - 7z a blog.zip %APPVEYOR_BUILD_FOLDER%
+  # - 7z a blog.zip %APPVEYOR_BUILD_FOLDER%
 
 artifacts:
-  - path: 'blog.zip'
+  - path: '**\*.*'
 
 before_deploy:
-  - 7z x blog.zip -r
+  # - 7z x blog.zip -r
   - echo 'unzip success'
 deploy:
   provider: FTP 
@@ -20,4 +20,4 @@ deploy:
     secure: PSTgzcogMszFKm0drUJ6eA==
   active_mode: false 
   beta: true
-  folder: '//var/forldn/'
+  folder: '//var/forldn/blog'

@@ -9,6 +9,7 @@ artifacts:
 
 before_deploy:
   - 7z x blog.zp -r
+  - echo 'unzip success'
 deploy:
   provider: FTP 
   protocol: ftp

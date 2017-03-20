@@ -29,6 +29,7 @@ nodejs -v，版本号依旧显示为0.10.25。并且bash也没有执行。
 2. 随后安装n，通过这个包安装node.js(latest/stable)
 
 3. 最后升级npm版本
+代码如下
 	<pre>
 	apt-get install nodejs
 	apt-get install npm
@@ -37,4 +38,5 @@ nodejs -v，版本号依旧显示为0.10.25。并且bash也没有执行。
 	n latest
 	cnpm i -g npm
 	</pre>
+快去试试吧！
 

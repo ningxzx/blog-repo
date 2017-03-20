@@ -9,3 +9,7 @@ artifacts:
 
 before_deploy:
   - echo 'unzip success'
+
+deploy:
+  provider: Environment
+  name: blog

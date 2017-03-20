@@ -1,23 +1,11 @@
 build_script:
-  - git status
+  - echo 'build start'
 
 after_build:
-  - 7z a blog.zip %APPVEYOR_BUILD_FOLDER%
+  # - 7z a blog.zip %APPVEYOR_BUILD_FOLDER%
 
 artifacts:
-  - path: 'blog.zip'
+  - path: '**\*.*'
 
 before_deploy:
-  # - 7z x blog.zip -r
-  - echo 'deploy will start'
-deploy:
-  provider: FTP 
-  protocol: ftp
-  host: 60.205.191.214 
-  username: webftp
-  #密码用这个加密 https://ci.appveyor.com/tools/encrypt
-  password: 
-    secure: PSTgzcogMszFKm0drUJ6eA==
-  active_mode: false 
-  beta: true
-  folder: '//var/forldn/blog/'
+  - echo 'unzip success'

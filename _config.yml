@@ -28,7 +28,7 @@ i18n_dir: :lang
 skip_render: 
   - readme.md
   - appveyor.yml
-  - lib
+  - lib/**
 
 # Writing
 new_post_name: :title.md # File name of new posts
